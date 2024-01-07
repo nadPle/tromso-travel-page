@@ -126,9 +126,13 @@ main p {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 100px;
+}
+
+section.secondary {
+  background-color: #f8f8f8;
 }
 
 .container {
@@ -146,12 +150,24 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 55px;
 }
+.grid-1-1-1 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-1-2-2 {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
 .grid-1-1-item {
   align-self: center;
+}
+
+.grid-1-1-1-item {
+  justify-self: center;
+}
+
+.text-center {
+  text-align: center;
 }
 
 @media (max-width: 992px) {
