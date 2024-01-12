@@ -121,6 +121,12 @@ main h4 {
   margin: 0 0 5px;
 }
 
+main h3 {
+  font-size: 2.4rem;
+  margin: 0;
+  line-height: 1;
+}
+
 main p {
   line-height: 1.5;
 }
@@ -150,9 +156,6 @@ section.secondary {
   grid-template-columns: 1fr 1fr;
   gap: 55px;
 }
-.grid-1-1-1 {
-  grid-template-columns: 1fr 1fr 1fr;
-}
 
 .grid-1-2-2 {
   grid-template-columns: 1fr 2fr 2fr;
@@ -162,8 +165,43 @@ section.secondary {
   align-self: center;
 }
 
-.grid-1-1-1-item {
-  justify-self: center;
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.card-article {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-link {
+  color: white;
+  background-color: #202b31;
+  padding: 16px 32px;
+  display: block;
+  margin-top: 40px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
 
 .text-center {
@@ -194,8 +232,15 @@ section.secondary {
   section {
     padding: 50px;
   }
+
   .grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    margin-top: 30px;
   }
 }
