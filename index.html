@@ -11,14 +11,25 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2066865cda.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    //Weather? / time?
-
     <div class="container">
       <header>
+        <div class="time-temp">
+          <p>Tromsø</p>
+          <div class="time" id="time"><i class="fa-regular fa-clock"></i></div>
+          <div class="temperature" id="temperature">
+            <i class="fa-solid fa-temperature-three-quarters"></i>
+          </div>
+        </div>
         <h3>· TRAVEL ·</h3>
         <h1>A Tribute to Tromsø</h1>
         <h2>Where the sun dances at midnight</h2>
@@ -28,8 +39,12 @@
       <main>
         <section class="grid grid-1-1">
           <div class="grid-1-1-item">
-            <img class="img-info-section" src="images/Tromso-10.JPG""
-            alt="Coffee in Tromsø">
+            <img
+              class="img-info-section"
+              src="images/Tromso-10.JPG"
+              alt="Coffee in Tromsø"
+              title="Enjoying coffee at the harbor"
+            />
           </div>
           <div class="grid-1-1-item">
             <h4>Why Tromsø?</h4>
@@ -182,32 +197,46 @@
           <div class="photo-grid">
             <div class="photo-grid-item">
               <div class="square-grid-container">
-                <img src="images/Tromso-1.JPG" alt="Boat on sea" />
-              </div>
-            </div>
-            <div class="photo-grid-item">
-              <div class="square-grid-container">
-                <img src="images/Tromso-11.JPG" alt="Flowers at the harbor" />
-              </div>
-            </div>
-            <div class="photo-grid-item">
-              <div class="square-grid-container">
-                <img src="images/Tromso-8.JPG" alt="Insight into the town" />
-              </div>
-            </div>
-            <div class="photo-grid-item">
-              <div class="square-grid-container">
                 <img
-                  src="images/Tromso-13.JPG"
-                  alt="Delicious food in the Fiskekompaniet"
+                  src="images/Tromso-1.JPG"
+                  alt="Boat on sea"
+                  title="Boat on the sea"
                 />
               </div>
             </div>
             <div class="photo-grid-item">
               <div class="square-grid-container">
                 <img
-                  src="images/Tromso-3.JPG"
+                  src="images/Tromso-11.JPG"
+                  alt="Flowers at the harbor"
+                  title="Flowers at the harbor"
+                />
+              </div>
+            </div>
+            <div class="photo-grid-item">
+              <div class="square-grid-container">
+                <img
+                  src="images/Tromso-8.JPG"
+                  alt="Insight into the town"
+                  title="Insight into the town"
+                />
+              </div>
+            </div>
+            <div class="photo-grid-item">
+              <div class="square-grid-container">
+                <img
+                  src="images/Tromso-16.JPG"
                   alt="View from Storsteinen at midnight sun"
+                  title="View from Storsteinen at midnight sun"
+                />
+              </div>
+            </div>
+            <div class="photo-grid-item">
+              <div class="square-grid-container">
+                <img
+                  src="images/Tromso-6.JPG"
+                  alt="Harbor in the middle of the night"
+                  title="Harbor in the middle of the night"
                 />
               </div>
             </div>
@@ -216,6 +245,7 @@
                 <img
                   src="images/Tromso-9.JPG"
                   alt="Wildlife not far from the town"
+                  title="Wildlife not far from the town"
                 />
               </div>
             </div>
@@ -229,12 +259,14 @@
             <h3>More about Tromsø</h3>
             <ul>
               <li>
-                <a href="https://www.visittromso.no/"
+                <a href="https://www.visittromso.no/" target="_blank"
                   >Official tourist information</a
                 >
               </li>
               <li>
-                <a href="https://capturetheatlas.com/tromso-map/"
+                <a
+                  href="https://capturetheatlas.com/tromso-map/"
+                  target="_blank"
                   >Map of Tromsø</a
                 >
               </li>
@@ -247,7 +279,9 @@
               learn Front End Development at SheCodes in my spare time a few
               months ago. I am constantly learning new things and expanding my
               skill set. Interested in finding out more? Check out my
-              <a href="https://dreamy-panda-3e8614.netlify.app/">website</a>.
+              <a href="https://dreamy-panda-3e8614.netlify.app/" target="_blank"
+                >website</a
+              >.
             </p>
           </div>
           <div class="about-page">
@@ -259,10 +293,13 @@
           </div>
         </section>
       </footer>
-      <p>
-        <a href="https://github.com/nadPle/tromso-travel-page">Open source</a>
-        code by Nadine Plepel
-      </p>
+      <div class="coded-by">
+        <p>
+          <a href="https://github.com/nadPle/tromso-travel-page">Open source</a>
+          code by Nadine Plepel
+        </p>
+      </div>
     </div>
+    <script src="javascript/index.js"></script>
   </body>
 </html>
